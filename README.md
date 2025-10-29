@@ -3,8 +3,8 @@ Web-Design-Assignment-1
 
 ##Home Page Stretch And Wireframe
 
-<img ![WhatsApp Image 2025-10-29 at 06 38 16_dd31ffde](https://github.com/user-attachments/assets/c1819994-40d2-444f-9ab4-dd321761f487)
-width="635" height="1097" alt="Home" src="https://github.com/user-attachments/assets/d0df967c-9b7d-4258-8242-bc74d2c904ed" />
+![WhatsApp Image 2025-10-29 at 06 38 16_dd31ffde](https://github.com/user-attachments/assets/c1819994-40d2-444f-9ab4-dd321761f487)
+<img width="635" height="1097" alt="Home" src="https://github.com/user-attachments/assets/d0df967c-9b7d-4258-8242-bc74d2c904ed" />
 
 ##Players Page Stretch And Wireframe
 ![WhatsApp Image 2025-10-29 at 06 38 17_97b5771f](https://github.com/user-attachments/assets/8b1d0454-8691-4164-b5b5-75d0218ce7c2)
