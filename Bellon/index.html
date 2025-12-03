@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sierra Leone Football Agency — Home</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">SLFA</div>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-left">
+            <img src="slfa.jpeg" alt="SLFA Logo" class="logo">
+            <span class="brand">Sierra Leone Football Agency</span>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="players.html" class="nav-link">Players</a>
+            <a href="matches.html" class="nav-link">Matches</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <section class="slider" aria-hidden="false">
+        <div class="slides">
+            <div class="slide" style="background-image:url('images/slide1.jpg')"></div>
+            <div class="slide" style="background-image:url('images/slide2.jpg')"></div>
+            <div class="slide" style="background-image:url('images/slide3.jpg')"></div>
+            <div class="slide" style="background-image:url('images/slide4.jpg')"></div>
+            <div class="slide" style="background-image:url('images/slide5.jpg')"></div>
+        </div>
+        <div class="slider-overlay">
+            <h1 class="hero-title">Building Football Excellence</h1>
+            <p class="hero-sub">Talent development — coaching — national pathways</p>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <!-- NEWS + HIGHLIGHTS -->
+        <section class="two-column">
+
+            <div class="column fade">
+                <h2 class="section-title">Latest News</h2>
+
+                <article class="news-card">
+                    <img src="1.jpeg" alt="News 1">
+                    <h3>National training camp opens</h3>
+                    <p>Senior squad report for a two-week training camp as part of qualifiers preparation.</p>
+                </article>
+
+                <article class="news-card">
+                    <img src="n2.jpeg" alt="News 2">
+                    <h3>Academy expansion announced</h3>
+                    <p>New regional centres to improve talent scouting and coaching quality nationwide.</p>
+                </article>
+            </div>
+
+            <div class="column fade">
+                <h2 class="section-title">Match Highlights</h2>
+
+                <article class="news-card">
+                    <img src="h1.jpeg" alt="Highlight 1">
+                    <h3>Thrilling derby victory</h3>
+                    <p>A late winner sparks celebration as the team claims a crucial three points.</p>
+                </article>
+
+                <article class="news-card">
+                    <img src="h2.jpeg" alt="Highlight 2">
+                    <h3>Young striker shines</h3>
+                    <p>U-20 forward named player of the match after a superb performance.</p>
+                </article>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2025 Your Website.All Right Reserved | Privacy Policy | Terms Of Service
+    </footer>
+
+    <!-- SCRIPTS: loader, slider, scroll reveal -->
+    <script>
+        // Loader
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.style.opacity = 0;
+            setTimeout(() => loader.style.display = 'none', 450);
+            window.dispatchEvent(new Event('scroll'));
+        });
+
+        // Simple auto slider
+        (function sliderInit() {
+            const slides = document.querySelectorAll('.slide');
+            let idx = 0;
+
+            function show(n) {
+                slides.forEach((s, i) => {
+                    s.style.opacity = (i === n) ? '1' : '0';
+                });
+            }
+            show(idx);
+            setInterval(() => {
+                idx = (idx + 1) % slides.length;
+                show(idx);
+            }, 6000);
+        })();
+
+        // Scroll reveal
+        function revealOnScroll() {
+            document.querySelectorAll('.fade').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 80) el.classList.add('show');
+            });
+        }
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+    </script>
+</body>
+
+</html>

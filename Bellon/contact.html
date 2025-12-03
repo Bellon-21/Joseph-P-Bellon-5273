@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contact — Sierra Leone Football Agency</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div id="loader">SLFA</div>
+
+    <nav class="nav">
+        <div class="nav-left">
+            <img src="slfa.jpeg" alt="SLFA Logo" class="logo">
+            <span class="brand">Sierra Leone Football Agency</span>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="players.html" class="nav-link">Players</a>
+            <a href="matches.html" class="nav-link">Matches</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2 class="section-title fade">Get in Touch</h2>
+
+        <p>Email:sierraleonefootballagency@gmail.com</p>
+        <p>Phone:+232 80 XXX XXX / +232 74 XXX XXX</p>
+        <P>Address:No.201 Jui Road Freetown</P>
+
+        <div class="contact-box fade">
+            <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent (demo)');">
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email address" required>
+                <input type="text" placeholder="Phone (optional)">
+                <textarea rows="6" placeholder="Your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="social">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+                <a href="https://twitter.com" target="_blank" aria-label="X / Twitter">Twitter</a>
+                <a href="https://wa.me/23200000000" target="_blank" aria-label="WhatsApp">WhatsApp</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>© 2025 Your Website.All Right Reserved | Privacy Policy | Terms Of Service</footer>
+
+    <script>
+        window.addEventListener('load', () => document.getElementById('loader').style.display = 'none');
+
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 80) {
+                    el.classList.add('show');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Players — Sierra Leone Football Agency</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div id="loader">SLFA</div>
+
+    <nav class="nav">
+        <div class="nav-left">
+            <img src="slfa.jpeg" alt="SLFA Logo" class="logo">
+            <span class="brand">Sierra Leone Football Agency</span>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="players.html" class="nav-link active">Players</a>
+            <a href="matches.html" class="nav-link">Matches</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2 class="section-title fade">Players</h2>
+
+        <input type="text" id="searchPlayer" placeholder="Search player..." class="search-box">
+
+        <section class="players-grid fade">
+
+            <div class="player-box">
+                <img src="mkamara.jpeg" alt="Musa Kamara">
+                <h3>Mohamed Kamara</h3>
+                <p>Age:28</p>
+                <p>Nationality: Sierra Leonean</p>
+            </div>
+
+            <div class="player-box">
+                <img src="juma.jpeg" alt="Daniel Bangura">
+                <h3>Juma Bah</h3>
+                <p>Age:23</p>
+                <p>Nationality: Sierra Leonean</p>
+            </div>
+
+            <div class="player-box">
+                <img src="koko.jpeg" alt="Joseph Sheriff">
+                <h3>Rodney Kokoto</h3>
+                <p>Age:25</p>
+                <p>Nationality: Sierra Leonean</p>
+            </div>
+
+            <div class="player-box">
+                <img src="jbellon.jpeg" alt="Mohamed Barrie">
+                <h3>Joseph Bellon</h3>
+                <p>Age:20</p>
+                <p>Nationality: Sierra Leonean</p>
+            </div>
+
+            <div class="player-box">
+                <img src="images/p5.jpg" alt="Alusine Sesay">
+                <h3>Alie Kefel</h3>
+                <p>Age:26</p>
+                <p>Nationality: Sierra Leonean</p>
+            </div>
+
+            <div class="player-box">
+                <img src="jjk.jpeg" alt="Samuel Conteh">
+                <h3>Joseph J Koroma</h3>
+                <p>Age:22</p>
+                <p>Nationality: Sierra Leonean</p>
+            </div>
+
+            <div class="player-box">
+                <img src="tombo.jpeg" alt="Abu Brima">
+                <h3>Musa Tombo</h3>
+                <p>Age:23</p>
+                <p>Nationality: Sierra Leonean</p>
+            </div>
+
+            <div class="player-box">
+                <img src="images/p8.jpg" alt="Ismael Koroma">
+                <h3>Ismael Sankoh</h3>
+                <p>Age:20</p>
+                <p>Nationality: Sierra Leonean</p>
+            </div>
+
+            <div class="player-box">
+                <img src="amkam.jpeg" alt="John Kamanda">
+                <h3>Amkam Kamara</h3>
+                <p>Age:35</p>
+                <p>Nationality: Sierra Leonean</p>
+            </div>
+
+            <div class="player-box">
+                <img src="images/p10.jpg" alt="Ibrahim Mansaray">
+                <h3>David Sesay</h3>
+                <p>Age:24</p>
+                <p>Nationality: Sierra Leonean</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>© 2025 Your Website.All Right Reserved | Privacy Policy | Terms Of Service</footer>
+
+    <script>
+        // loader hide
+        window.addEventListener('load', () => {
+            document.getElementById('loader').style.display = 'none';
+        });
+
+        // fade reveal
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 80) {
+                    el.classList.add('show');
+                }
+            });
+        });
+        // Search filter
+        const searchBox = document.getElementById("searchPlayer");
+
+        searchBox.addEventListener("keyup", function() {
+            const value = searchBox.value.toLowerCase();
+            const players = document.querySelectorAll(".player-box");
+
+            players.forEach(player => {
+                const name = player.querySelector("h3").innerText.toLowerCase();
+                player.style.display = name.includes(value) ? "block" : "none";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

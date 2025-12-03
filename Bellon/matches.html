@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Matches — Sierra Leone Football Agency</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div id="loader">SLFA</div>
+
+    <nav class="nav">
+        <div class="nav-left">
+            <img src="slfa.jpeg" alt="SLFA Logo" class="logo">
+            <span class="brand">Sierra Leone Football Agency</span>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="players.html" class="nav-link">Players</a>
+            <a href="matches.html" class="nav-link active">Matches</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2 class="section-title fade">Upcoming Fixtures</h2>
+
+        <table class="fade">
+            <thead>
+                <tr>
+                    <th>Matches</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bo Rangers VS Bhantal</td>
+                    <td>2025-02-02</td>
+                    <td>Approved School</td>
+                </tr>
+                <tr>
+                    <td>FC Kallon VS Dolly 11 FC</td>
+                    <td>2025-02-06</td>
+                    <td>Police Field</td>
+                </tr>
+                <tr>
+                    <td>East End Lions VS Freetown City</td>
+                    <td>2025-02-12</td>
+                    <td>National Stadium</td>
+                </tr>
+                <tr>
+                    <td>SLIFA VS Star Sport</td>
+                    <td>2025-02-18</td>
+                    <td>SS Camp</td>
+                </tr>
+                <tr>
+                    <td>Mighty Blackpool VS Diamond Star</td>
+                    <td>2025-02-25</td>
+                    <td>GDO Playing Field</td>
+                </tr>
+                <tr>
+                    <td>Luawa FC VS Bellon FC</td>
+                    <td>2025-03-03</td>
+                    <td>National Stadium</td>
+                </tr>
+                <tr>
+                    <td>Wilberforce FC VS Abacha</td>
+                    <td>2025-03-08</td>
+                    <td>Parade</td>
+                </tr>
+                <tr>
+                    <td>Wusum Stars VS East End Tigers</td>
+                    <td>2025-03-12</td>
+                    <td>Atuga</td>
+                </tr>
+                <tr>
+                    <td>Bullom VS Old Edwardians</td>
+                    <td>2025-03-18</td>
+                    <td>SlFA Playing Field</td>
+                </tr>
+                <tr>
+                    <td>Kamboi Eagles VS Bai Bureh Warriors</td>
+                    <td>2025-03-25</td>
+                    <td>Southern Arean</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title fade" style="margin-top:30px;">Recent Results</h2>
+
+        <table class="fade">
+            <thead>
+                <tr>
+                    <th>Match</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kamboi Eagles VS Bai Bureh Warriors</td>
+                    <td>3 - 0</td>
+                    <td>2025-01-28</td>
+                </tr>
+                <tr>
+                    <td> Old Edwardians VS East End Tigers</td>
+                    <td>1 - 0</td>
+                    <td>2025-01-20</td>
+                </tr>
+                <tr>
+                    <td>FC Kallon VS Dolly 11 FC</td>
+                    <td>0 - 1</td>
+                    <td>2025-01-15</td>
+                </tr>
+                <tr>
+                    <td>East End Lions VS Freetown City</td>
+                    <td>4 - 2</td>
+                    <td>2024-12-30</td>
+                </tr>
+                <tr>
+                    <td>Wusum Stars VS Bullom</td>
+                    <td>2 - 2</td>
+                    <td>2024-12-22</td>
+                </tr>
+                <tr>
+                    <td>Bo Rangers VS Bhantal</td>
+                    <td>3 - 1</td>
+                    <td>2024-12-05</td>
+                </tr>
+                <tr>
+                    <td>SLIFA VS Star Sport</td>
+                    <td>0 - 0</td>
+                    <td>2024-11-28</td>
+                </tr>
+                <tr>
+                    <td>Luawa FC VS Bellon FC</td>
+                    <td>2 - 3</td>
+                    <td>2024-11-20</td>
+                </tr>
+                <tr>
+                    <td>Mighty Blackpool VS Diamond Star</td>
+                    <td>1 - 1</td>
+                    <td>2024-11-12</td>
+                </tr>
+                <tr>
+                    <td>Wilberforce FC VS Abacha</td>
+                    <td>5 - 4</td>
+                    <td>2024-11-05</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>© 2025 Your Website.All Right Reserved | Privacy Policy | Terms Of Service</footer>
+
+    <script>
+        window.addEventListener('load', () => document.getElementById('loader').style.display = 'none');
+
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 80) {
+                    el.classList.add('show');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

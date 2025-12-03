@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>About — Sierra Leone Football Agency</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div id="loader">SLFA</div>
+
+    <nav class="nav">
+        <div class="nav-left">
+            <img src="slfa.jpeg" alt="SLFA Logo" class="logo">
+            <span class="brand">Sierra Leone Football Agency</span>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="players.html" class="nav-link">Players</a>
+            <a href="matches.html" class="nav-link">Matches</a>
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2 class="section-title fade">History</h2>
+
+        <section class="about-section fade">
+            <img src="slfa.jpeg" alt="History">
+            <div>
+                <h3>Our Roots</h3>
+                <p>Founded to discover and develop Sierra Leone's best players, the agency has focused on coaching pathways, grassroots programs and professional development since its inception.</p>
+            </div>
+        </section>
+
+        <h2 class="section-title fade">Mission</h2>
+
+        <section class="about-section fade">
+            <img src="mission.jpeg" alt="Mission">
+            <div>
+                <h3>What We Do</h3>
+                <p>Our mission is to give talented players the resources, coaching and exposure they need to succeed at the highest levels of the game.</p>
+            </div>
+        </section>
+
+        <h2 class="section-title fade">Vision</h2>
+
+        <section class="about-section fade">
+            <img src="vision.jpeg" alt="Vision">
+            <div>
+                <h3>Where We’re Going</h3>
+                <p>We aim to be recognized across Africa as a leading football development agency, producing players ready for national and international competition.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>© 2025 Your Website.All Right Reserved | Privacy Policy | Terms Of Service</footer>
+
+    <script>
+        window.addEventListener('load', () => document.getElementById('loader').style.display = 'none');
+
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 80) {
+                    el.classList.add('show');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
